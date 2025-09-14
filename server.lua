@@ -4,11 +4,11 @@ local adminDutyPlayers = {} -- Track all admins on duty server-wide
 
 -- License to name and title mapping
 local licenseToName = {
-    ['license:b1ecf5348bd4d5b3abd09e0272a97059d93e9c8d'] = 'VoidEngineCC'
+    ['license:'] = 'VoidEngineCC'
 }
 
 local licenseToTitle = {
-    ['license:b1ecf5348bd4d5b3abd09e0272a97059d93e9c8d'] = 'Project Leader'
+    ['license:'] = 'Project Leader'
 }
 
 -- Title colors
@@ -112,5 +112,6 @@ AddEventHandler('playerDropped', function(reason)
         print("Player " .. src .. " disconnected, removed from admin duty list")
     end
 end)
+
 
 print("qb-admin-duty server script loaded successfully")
